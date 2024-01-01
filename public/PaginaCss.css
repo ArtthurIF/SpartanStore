@@ -1,0 +1,139 @@
+header {
+	 background-color: purple;
+	 box-shadow: 0px 3px 10px blue;
+}
+
+.nav-bar{
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem 6rem;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.logo h1 {
+	 color: white;
+}
+
+.nav-list{
+	display: flex;
+	align-items: center;
+}
+
+.nav-list ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.nav-item {
+	margin: 0 15px;
+}
+
+.nav-link {
+	text-decoration: none;
+	font-size: 1.15rem;
+	color: #fff;
+	font-weight: 400;
+}
+
+.login-button button{
+	border: none;
+	background-color: red;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+.login-button button a {
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 1.1rem;
+}
+
+.mobile-menu-icon{
+	display: none;
+}
+
+.mobile-menu{
+	display: none;
+}
+
+@media screen and (max-width: 730px){
+
+	.nav-bar{
+	padding: 1.5rem 4rem;
+	}
+	
+	.nav-item{
+		display: none;
+	}
+	
+	.login-button{
+	display: none;
+	}
+	
+	.mobile-menu-icon{
+	display: block;
+	}
+	
+	.mobile-menu-icon button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	}
+	
+	.mobile-menu ul{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 1rem;
+	}
+	
+	.mobile-menu .nav-item{
+	display: block;
+	padding-bottom: 1.2rem;
+	}
+	
+	.mobile-menu .login-button{
+	display: block;
+	padding: 1rem 2 rem;}
+	
+	.mobile-menu .login-button button{
+	width: 100%;
+	}
+	
+	.open{
+	display: block;}
+}
+
+body {
+    /* Defina o gradiente usando a propriedade background-color */
+    background-color: #6495ED;
+
+    /* Adicione outros estilos para o corpo da página, se necessário */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /* Adicione estilos adicionais conforme necessário */
+}
+
+	p {
+    font-family: 'Helvetica', Arial, sans-serif; /* Escolha uma fonte elegante */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+    margin-bottom: 15px; /* Espaço na parte inferior do parágrafo */
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
