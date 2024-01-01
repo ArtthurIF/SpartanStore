@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Camisa Fluminense</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="PaginaCss.css">
+  
+  
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha quando não há espaço suficiente */
+        
+        }
+
+        .image-container {
+            margin-right: 20px; /* Ajuste a margem conforme necessário */
+        }
+
+		
+	#notification {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    </style>
+    
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  <header>
+  <nav class="nav-bar">
+  	<div class="logo">
+  	<h1>Spartan Sports Store</h1>
+  	</div>
+  	
+  	<div class="nav-list">
+  	<ul>
+  	<li class="nav-item"><a href="Index.html" class="nav-link">Inicio</a></li>
+  	<li class="nav-item"><a href="FaleConosco.html" class="nav-link">Fale Com os Desenvolvedores</a></li>
+  	 <li class="nav-item"><a href="Cadastrar.html" class="nav-link">Cadastrar Conta</a></li>
+  	</ul>
+  	</div>
+  	
+  	<div class="login-button">
+  		<button><a href="Login.html">Entrar</a></button>
+  	</div>
+  	
+  	<div class="mobile-menu-icon">
+  	<button onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg"></button>
+  	</div>
+  	</nav>
+  	
+  	<div class="mobile-menu">
+  	 <ul>
+  	 <li class="nav-item"><a href="Index.html" class="nav-link">Inicio</a></li>
+  	<li class="nav-item"><a href="FaleConosco.html" class="nav-link">Fale Com os Desenvolvedores</a></li>
+  	 <li class="nav-item"><a href="Cadastrar.html" class="nav-link">Cadastrar Conta</a></li>
+  	
+  	 </ul>
+  	 
+  	 <div class="login-button">
+  		<button><a href="Login.html">Entrar</a></button>
+  	</div>
+  	 
+  	 </div>
+  	</header>
+  	
+  	<script src="js/script.js"></script>
+  
+  
+  	<!-- fim do cabeçalho -->
+  	
+  	<br>
+	
+    <div class="container">
+        <div class="image-container">
+            <img src="WhatsApp Image 2023-12-24 at 18.52.55.jpeg" align="middle" class="img-thumbnail" style="width: 600px ;height: 600px ; height: auto;">
+        </div>
+        <div align="center">
+            <h1 align="justify" style="font-size: 2em; background-color: white;">Camisa Fluminense FC - Umbro</h1>
+            <h2 align="justify" style="background-color: yellow;">R$ 100,00</h2>
+            <h4 align="justify" style="background-color: white;">100% poliéster</h4>
+            <h4 align="justify" style="background-color: white;">Tecnologia de controle da umidade</h4>
+            <h4 align="justify" style="background-color: orange;">P : Largura 50 cm, Altura 70 cm</h4>
+            <h4 align="justify" style="background-color: orange;">M : Largura 54 cm, Altura 72 cm</h4>
+            <h4 align="justify" style="background-color: orange;">G : Largura 58 cm, Altura 74 cm</h4>
+            <h4 align="justify" style="background-color: orange;">GG: Largura 62 cm, Altura 76 cm</h4>
+
+              <a class="btn btn-primary" role="button" onclick="mostrarNotificacao()">Fazer Pedido</a>
+
+  <div id="notification">Compra concluída!</div>
+
+  <script>
+    function mostrarNotificacao() {
+      var notification = document.getElementById('notification');
+      notification.style.display = 'block';
+      setTimeout(function () {
+        notification.style.display = 'none';
+      }, 3000);  // A notificação será ocultada após 3 segundos (3000 milissegundos)
+    }
+  </script>
+
+</div>
+  </body>
+</html>
